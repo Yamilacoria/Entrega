@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.form-section{
+    background-color: rgb(172, 153, 129);
+    text-align: center;
+    border: 2px rgb(8, 8, 8) solid;
+    border-radius: 10px;
+    padding: 1%;
+}
+*{
+    box-sizing: content-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family:Shadows Into Light, Verdana,Tahoma, sans-serif;
+    font-size: x-large;  
+
+
+}
+header{
+    color: rgb(0, 0, 0);
+    background-image: url(media/imagenes/FondodeBotleSea.jpg);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+header img{
+    width: 200px;
+}
+header a{
+    text-decoration:double;
+    color:  rgb(250, 250, 250);
+    
+}
+header a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: overline;
+}
+.flex-links{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+   
+}
+.SobreNosotros{
+
+    border: 2px solid rgb(8, 8, 8);
+    text-align: center;
+    padding: 5%;
+    border-radius: 0px;
+    background-image: url(media/imagenes/FondodeBotleSea.jpg);
+    background-position:center;
+    background-size:center;
+    background-repeat: no-repeat;
+}
+.texto-SobreNosotros{
+    border: 2px solid rgb(90, 166, 185);
+    color: rgb(10, 10, 10);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+/*productos*/
+
+.section-prod{
+     background-image: url(media/imagenes/pastelmar.png);
+
+}
+
+.prod-titulo{
+    text-align: center;
+    margin: 0% ;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+}
+
+.flex-container img{
+    width: 300px;
+   
+
+}
+.item{
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    
+     
+}
+
+/*card*/
+
+.precio{
+    font-size: xx-large;
+    text-align: center;
+    margin: 2%;
+}
+.oferta{
+    font-size: x-large;
+    text-align: center;
+    margin: 1%;
+    color: green;
+}
+
+.comprar{
+    background-color: rgb(75, 166, 219);
+    color: black;
+    padding: 4%;
+    border-radius: 10px;
+    margin: 1%;
+    
+}
+.comprar:hover{
+    color: rgb(153, 200, 228);
+    background-color: black;
+    cursor: pointer;
+}
+
+.descripcion{
+    font-size: large;
+    text-align: left;
+    margin-left: 1%;
+}
+
+/*formulario*/
+
+.form-section{
+    background-image: url(media/imagenes/ocean.png);
+    color: rgb(7, 7, 7);
+    background-position:left;
+    text-align: center;
+    border: 2px rgb(5, 5, 5);
+    border-radius: 0px;
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contactaConNosotros{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin:auto;
+    background-image: url(media/imagenes/LogoBottleSea.png);
+    background-position: center;
+   
+
+
+}
+.nombre{
+    margin: 10px;
+}
+.mail{
+    margin-bottom: 10px;
+}
+.mensaje{
+    margin-bottom: 10px;
+}
+.enviar{
+    margin-bottom: 10px;
+    background-color: rgb(46, 117, 134) ;
+    border-radius: 10px;
+    color: black;
+    padding: 5px;
+}
+.enviar:hover{
+    background-color: black;
+}
+.footer{
+    
+    color: rgb(25, 25, 26);
+    padding: 5%;
+    text-align: center;
+    border: 2px solid black;
+    font-family: Shadows Into Light, Verdana,Tahoma, sans-serif;
+    
+}
+.footer-container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap:60px;
+    background-image: url(media/imagenes/ocean.png);
+    background-position: bottom;
+    
+}
+.footer-redesContacto svg{
+    width: 60px;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.footer-links a{
+    text-decoration: none;
+    color: rgb(245, 247, 247);
+}
+.footer-links a:hover{
+    text-decoration: underline;
+    color: darkgoldenrod;
+}
+
+
+/*Medias Queries*/
+
+@media only screen and (max-width:600px){
+
+    header{
+        flex-direction: column;
+    }
+    .form-section{
+        background-color: cadetblue;
+        color: darkgoldenrod;
+    }
+    
+
+
+}
+@media only screen and(max-width:600.0px){
+    header{
+        font-size: clamp(1rem, 32px, 2rem);  
+    }
+    header img{
+        width: 350px;
+    }
+    nav{
+        margin-right: 10px;
+    }
+    .flex-links{
+        gap:10px;
+
+    }
+    .texto-SobreNosotros{
+        font-size: clamp(1rem, 32px, 2rem);
+    }
+    .flex-container img{
+         width: 300px;
+    }
+    .footer{
+
+        background-color: black;
+    }
+    .footer-container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .footer-redesContacto svg{
+        width: 130px;
+    }
+}

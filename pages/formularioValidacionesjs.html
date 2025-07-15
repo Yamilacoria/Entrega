@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario JS</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+
+    <header>
+        
+   <main>
+    <section class="form-section">
+      <h2 class="titulo">Formulario con Validaciones JS</h2>
+
+      <div id="empty-name-error" class="error"></div>
+
+      <div id="empty-age-error" class="error"></div>
+
+      <div id="min-age-error" class="error"></div>
+
+      <div id="min-name-error" class="error"></div>
+
+      <div id="starts-with-a-error" class="error"></div>
+
+      <form id="myForm" class="my-form" novalidate>
+
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required> <br>
+
+        <input type="number" name="edad" id="edad" placeholder="Ingrese su edad" required> <br>
+
+        <button type="button" class="btn-enviar" id="btnEnviar">Enviar</button>
+     
+      </form>
+
+    </section>
+
+   </main>
+
+    <footer class="footer">
+
+        Formulario
+        
+    </footer>
+
+    <script src="../js/formularioValidacionesjs.js"></script>
+
+    </header>
+    
+</body>
+</html>
